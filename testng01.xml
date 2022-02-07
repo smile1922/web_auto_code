@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suit" parallel ="tests" thread-count="2">
+    <listeners>
+        <listener class-name="framework.listener.TestResultListener">
+        </listener>
+    </listeners>
+    <test name = "线程1">
+        <classes>
+            <class name = "framework.testcases.TestLogin02"/>
+            <!--class name = "framework.testcases.TestCart"/-->
+        </classes>
+    </test>
+</suite>
